@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Valentine Card ♡</title>
+        <link rel="icon" type="image/png" href="favicon.png">
+    </head>
+    <body>
+         <!-- Optional audio popup -->
+        <div id="popup" class="popup-overlay">
+            <div class="popup-content">
+
+                 <!-- Replace with your own audio file -->
+
+                <audio controls >
+                    <source src="sample-audio.mp3" type="audio/mp3">
+                </audio>
+                <button id="closePopup" class="close-button">Close</button>
+            </div>
+        </div>
+
+        <div class="valentines_card">
+               <!-- Front of the card -->
+            <div class="front_card">
+                   <!-- Replace with your own image -->
+                <img src="cover.jpg" class="front_img">
+                <div class="front_text">
+                    <h4><i>For someone special...</i></h4>
+                </div>    
+            </div>
+                 <!-- Inside of the card -->
+            <div class="inside_card">
+                  <!-- Replace with your own video -->
+                <video width="100%" height="auto" controls  style="margin-top: 20px;">
+                    <source src="sample-video.mp4" type="video/mp4">
+                </video>
+                <div class="inside_text">
+                    <h5 class="love">Happy Valentine's Day! ♡ <br>
+                        Replace this text with your own message. <br>
+                         You can customize the photo, video, music,
+                    colors and text. </h5>
+                    <h6 class="from-you">From: Your Name ♡ <3</h6>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            window.onload = function() {
+                const popup = document.getElementById('popup');
+                const closePopup = document.getElementById('closePopup');
+                
+                closePopup.addEventListener('click', function() {
+                    popup.style.display = 'none';
+                });
+            };
+        </script>
+    </body>
+</html>
